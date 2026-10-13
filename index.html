@@ -106,10 +106,14 @@
   .hero-points { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 12px; }
   .hero-points li { display: flex; gap: 12px; align-items: flex-start; font-weight: 500; }
   .tick { flex: 0 0 24px; height: 24px; border-radius: 50%; background: var(--blush-2); color: var(--rose-ink); display: grid; place-items: center; font-size: 13px; font-weight: 700; margin-top: 1px; }
-  .guarantee-chip { display: inline-flex; align-items: center; gap: 12px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; width: fit-content; box-shadow: var(--shadow); }
-  .seal { width: 44px; height: 44px; border-radius: 50%; background: var(--rose-ink); color: #fff; display: grid; place-items: center; font-family: "Fraunces", serif; font-size: 13px; font-weight: 600; line-height: 1; text-align: center; }
-  .guarantee-chip b { display: block; font-size: 15px; }
-  .guarantee-chip span { font-size: 14px; color: var(--muted); }
+  .guarantee-chip { position: relative; display: flex; align-items: center; gap: 18px; max-width: 560px; margin-top: 18px; background: linear-gradient(150deg, #fffaf0 0%, #fbedcf 100%); border: 2px solid #e2c27a; border-radius: 20px; padding: 30px 24px 22px; box-shadow: 0 2px 0 #f3e2b8, 0 20px 44px -18px rgba(156, 112, 30, .45); }
+  .guarantee-chip .gc-badge { position: absolute; top: -13px; left: 24px; background: var(--rose-ink); color: #fff; font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 5px 13px; border-radius: 999px; box-shadow: 0 6px 14px -6px rgba(122,69,71,.6); color: #fff; font-size: 11.5px; line-height: 1.2; }
+  .seal { flex: 0 0 auto; width: 76px; height: 76px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #f8dc93, #e3b553); color: var(--ink); display: grid; place-content: center; text-align: center; line-height: 1; box-shadow: 0 0 0 6px rgba(239, 207, 134, .35), 0 10px 20px -8px rgba(156, 112, 30, .6); }
+  .seal strong { font-family: "Fraunces", serif; font-size: 30px; font-weight: 700; }
+  .seal small { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-top: 2px; }
+  .guarantee-chip b { display: block; font-family: "Fraunces", Georgia, serif; font-size: 21px; font-weight: 600; line-height: 1.25; color: var(--ink); margin-bottom: 4px; }
+  .guarantee-chip span { font-size: 16px; color: var(--ink-soft); }
+  .guarantee-chip span strong { color: var(--rose-ink); }
 
   /* ---------- Form card ---------- */
   .form-card { background: var(--white); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); padding: 28px; position: relative; scroll-margin-top: 20px; }
@@ -298,9 +302,7 @@
     .hero-copy h1 { order: 2; }
     .form-card { order: 3; margin: 6px 0 0; }
     .rating { order: 3; grid-column: auto; margin: 2px 0 14px; }
-    .hero-copy .sub { order: 4; }
-    .hero-points { order: 5; }
-    .guarantee-chip { order: 6; }
+    .guarantee-chip { order: 6; margin: 18px 0 4px; }
     .phases { grid-template-columns: 1fr; }
     .proof { grid-template-columns: 1fr 1fr; }
     .guarantee { grid-template-columns: 1fr; text-align: center; padding: 44px 26px; justify-items: center; gap: 26px; }
@@ -348,15 +350,10 @@
     <div class="hero-copy">
       <span class="label">Para artistas de micropigmentación</span>
       <h1>Te llenamos la agenda con clientas nuevas desde Facebook e Instagram <em>o te devolvemos tu dinero.</em></h1>
-      <p class="sub">Anuncios, página, app de citas y seguimiento automático, todo hecho por nosotros. Tú solo atiendes a las clientas que llegan listas para reservar.</p>
-      <ul class="hero-points">
-        <li><span class="tick">✓</span>Nosotros creamos y manejamos tus anuncios en español</li>
-        <li><span class="tick">✓</span>Una asistente con IA contesta y da seguimiento a cada interesada</li>
-        <li><span class="tick">✓</span>Tu propia app con tu nombre y tu número de negocio</li>
-      </ul>
       <div class="guarantee-chip">
-        <div class="seal">30<br>días</div>
-        <div><b>Garantía de 30 días, por cualquier razón</b><span>Si no estás contenta, te regresamos el 100%.</span></div>
+        <span class="gc-badge">Sin riesgo</span>
+        <div class="seal"><strong>30</strong><small>días</small></div>
+        <div><b>Garantía de 30 días, por cualquier razón</b><span>Si no estás contenta, te regresamos el <strong>100%</strong> de tu dinero.</span></div>
       </div>
     </div>
 
