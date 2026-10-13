@@ -343,6 +343,20 @@
     footer { padding-bottom: 96px; }
     footer a { margin-left: 0; margin-right: 18px; }
   }
+  /* Phone: fit the whole first form step on the first screen */
+  @media (max-width: 680px) {
+    .topbar { display: none; }
+    .nav { padding: 10px 0 4px; }
+    .brand { font-size: 19px; }
+    .hero { padding: 0 0 48px; }
+    .hero-grid { gap: 10px; }
+    .hero-copy .label { font-size: 10.5px; letter-spacing: .1em; gap: 6px; }
+    .hero-copy .label::before { width: 14px; }
+    .hero-copy h1 { font-size: 23px; line-height: 1.15; }
+    .trust-row { margin: 0; }
+    .form-card { margin-top: 2px; border-radius: 18px; }
+    .form-card .secure { display: none; }
+  }
 </style>
 </head>
 <body>
