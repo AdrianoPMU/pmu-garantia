@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda Llena con Garantía | PMU Academia</title>
+<meta name="description" content="Te llenamos la agenda con clientas nuevas desde Facebook e Instagram, o te devolvemos tu dinero. Sistema Agenda Llena para artistas de micropigmentación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ============ CONFIGURACIÓN (edita aquí) ============ -->
+<script>
+  var CONFIG = {
+    // Zuops Smart Form (guarda la clienta en Zuops y abre tu calendario)
+    FORM_URL: "https://crm.adrianolocal.com/f/agenda-llena-pagina-de-garantia-3l6g",
+    // Opcional: tu ID de Meta Pixel (solo números). Vacío = no carga el pixel
+    META_PIXEL_ID: ""
+  };
+</script>
+<!-- ==================================================== -->
+
+<script>
+  if (CONFIG.META_PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.META_PIXEL_ID); fbq('track', 'PageView');
+  }
+</script>
+
+<style>
+  :root {
+    --cream: #fbf6f3;
+    --blush: #f3e3df;
+    --blush-2: #ead2cc;
+    --rose: #c48b88;
+    --rose-deep: #9c5f5f;
+    --rose-ink: #7a4547;
+    --ink: #2f2224;
+    --ink-soft: #5e4b4d;
+    --muted: #8f7b7c;
+    --line: #e9d8d3;
+    --white: #ffffff;
+    --good: #5f8a6a;
+    --radius: 18px;
+    --shadow: 0 1px 2px rgba(80, 40, 40, .05), 0 12px 32px -12px rgba(122, 69, 71, .22);
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 17px/1.6 "DM Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  .narrow { max-width: 780px; }
+
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -0.015em; line-height: 1.12; margin: 0; }
+  h1 { font-size: clamp(34px, 5.2vw, 56px); }
+  h2 { font-size: clamp(28px, 3.8vw, 42px); }
+  h3 { font-size: 21px; }
+  h1 em, h2 em { font-style: italic; font-weight: 400; color: var(--rose-deep); }
+  p { margin: 0; }
+
+  .label { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--rose-deep); }
+  .label::before { content: ""; width: 22px; height: 1.5px; background: var(--rose); }
+  .section { padding: 88px 0; }
+  .section-head { text-align: center; max-width: 720px; margin: 0 auto 48px; display: grid; gap: 14px; justify-items: center; }
+  .section-head p { color: var(--ink-soft); font-size: 18px; }
+  .alt { background: var(--white); }
+  .tint { background: var(--blush); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; cursor: pointer; text-decoration: none;
+         background: var(--rose-ink); color: #fff; font: 700 17px/1 "DM Sans", sans-serif; padding: 19px 30px; border-radius: 999px;
+         box-shadow: 0 10px 24px -10px rgba(122, 69, 71, .7); transition: transform .15s, background .15s; }
+  .btn:hover { background: #683a3c; transform: translateY(-1px); }
+  .btn .arr { transition: transform .15s; }
+  .btn:hover .arr { transform: translateX(3px); }
+  .cta-row { text-align: center; margin-top: 44px; display: grid; gap: 10px; justify-items: center; }
+  .cta-note { font-size: 14px; color: var(--muted); }
+
+  /* ---------- Top bar ---------- */
+  .topbar { background: var(--rose-ink); color: #fbeeee; text-align: center; font-size: 14px; padding: 10px 16px; letter-spacing: .01em; }
+  .topbar strong { color: #fff; }
+  .nav { padding: 20px 0; }
+  .nav .container { display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: "Fraunces", serif; font-size: 22px; font-weight: 600; text-decoration: none; letter-spacing: -0.01em; }
+  .brand span { color: var(--rose-deep); font-style: italic; font-weight: 400; }
+  .nav a.small { font-size: 15px; font-weight: 600; color: var(--rose-ink); text-decoration: none; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 36px 0 88px; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; width: 620px; height: 620px; right: -180px; top: -160px; border-radius: 50%;
+                  background: radial-gradient(circle, rgba(234, 210, 204, .9), rgba(251, 246, 243, 0) 68%); pointer-events: none; }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; column-gap: 56px; row-gap: 0; grid-template-rows: auto 1fr; align-items: start; position: relative; }
+  .hero-copy { grid-row: span 2; }
+  .hero-copy { display: grid; gap: 22px; padding-top: 18px; }
+  .hero-copy .sub { font-size: 19px; color: var(--ink-soft); max-width: 560px; }
+  .hero-points { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 12px; }
+  .hero-points li { display: flex; gap: 12px; align-items: flex-start; font-weight: 500; }
+  .tick { flex: 0 0 24px; height: 24px; border-radius: 50%; background: var(--blush-2); color: var(--rose-ink); display: grid; place-items: center; font-size: 13px; font-weight: 700; margin-top: 1px; }
+  .guarantee-chip { display: inline-flex; align-items: center; gap: 12px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; width: fit-content; box-shadow: var(--shadow); }
+  .seal { width: 44px; height: 44px; border-radius: 50%; background: var(--rose-ink); color: #fff; display: grid; place-items: center; font-family: "Fraunces", serif; font-size: 13px; font-weight: 600; line-height: 1; text-align: center; }
+  .guarantee-chip b { display: block; font-size: 15px; }
+  .guarantee-chip span { font-size: 14px; color: var(--muted); }
+
+  /* ---------- Form card ---------- */
+  .form-card { background: var(--white); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); padding: 28px; position: relative; scroll-margin-top: 20px; }
+  .form-card { padding: 0; overflow: hidden; }
+  .form-card #zform { min-height: 480px; background: #fff; }
+  .rating { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 16px; grid-column: 2; }
+  .rating-stars { color: #d4a24c; font-size: 22px; letter-spacing: 3px; line-height: 1; }
+  .rating-text { font-size: 14.5px; color: var(--ink-soft); }
+  .rating-text b { color: var(--ink); }
+  .form-card .secure { padding: 10px 16px 14px; margin: 0; border-top: 1px solid var(--line); }
+  .form-card h3 { font-size: 23px; margin-bottom: 4px; }
+  .form-card .intro { color: var(--muted); font-size: 15px; margin-bottom: 18px; }
+  .progress { height: 6px; background: var(--blush); border-radius: 3px; overflow: hidden; margin-bottom: 8px; }
+  .progress span { display: block; height: 100%; width: 20%; background: linear-gradient(90deg, var(--rose), var(--rose-ink)); border-radius: 3px; transition: width .3s ease; }
+  .step-count { font-size: 13px; color: var(--muted); margin-bottom: 18px; font-weight: 500; }
+  .step { display: none; animation: fade .25s ease; }
+  .step.on { display: block; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .q { font-weight: 700; font-size: 18px; line-height: 1.35; margin-bottom: 14px; }
+  .opts { display: grid; gap: 10px; }
+  .opt { text-align: left; width: 100%; background: var(--cream); border: 1.5px solid var(--line); border-radius: 14px; padding: 15px 16px;
+         font: 500 16px/1.35 "DM Sans", sans-serif; color: var(--ink); cursor: pointer; display: flex; align-items: center; gap: 12px; transition: border-color .12s, background .12s; }
+  .opt::before { content: ""; flex: 0 0 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--blush-2); background: #fff; transition: .12s; }
+  .opt:hover { border-color: var(--rose); }
+  .opt.sel { border-color: var(--rose-ink); background: #fbf0ee; }
+  .opt.sel::before { border: 5px solid var(--rose-ink); }
+  .field { display: grid; gap: 6px; margin-bottom: 12px; }
+  .field label { font-size: 14px; font-weight: 600; color: var(--ink-soft); }
+  .field input { width: 100%; border: 1.5px solid var(--line); border-radius: 12px; padding: 14px 14px; font: 16px "DM Sans", sans-serif; background: var(--cream); color: var(--ink); }
+  .field input:focus { outline: none; border-color: var(--rose-ink); background: #fff; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 12.5px; color: var(--muted); line-height: 1.45; margin: 6px 0 16px; }
+  .consent input { margin-top: 3px; accent-color: var(--rose-ink); flex: 0 0 auto; }
+  .form-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; gap: 12px; }
+  .back { background: none; border: 0; color: var(--muted); font: 600 15px "DM Sans", sans-serif; cursor: pointer; padding: 8px 0; visibility: hidden; }
+  .back.show { visibility: visible; }
+  .form-card .btn { padding: 16px 24px; font-size: 16px; }
+  .form-card .btn[disabled] { opacity: .45; pointer-events: none; }
+  .err { color: #b04a4a; font-size: 14px; margin-top: 8px; min-height: 1em; }
+  .done { text-align: center; padding: 18px 4px 6px; display: grid; gap: 12px; justify-items: center; }
+  .done .big-ico { width: 60px; height: 60px; border-radius: 50%; background: var(--blush); color: var(--rose-ink); display: grid; place-items: center; font-size: 26px; }
+  .secure { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+  /* ---------- Trust strip ---------- */
+  .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--white); padding: 26px 0; }
+  .strip .container { display: flex; align-items: center; justify-content: center; gap: 14px 36px; flex-wrap: wrap; }
+  .strip small { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .strip .name { font-family: "Fraunces", serif; font-size: 19px; color: var(--ink-soft); font-style: italic; }
+
+  /* ---------- Phases ---------- */
+  .phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .phase { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px; display: grid; gap: 12px; align-content: start; position: relative; }
+  .phase .num { font-family: "Fraunces", serif; font-size: 46px; line-height: 1; color: var(--rose); font-weight: 400; font-style: italic; }
+  .phase .when { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--rose-deep); }
+  .phase p { color: var(--ink-soft); font-size: 16px; }
+
+  /* ---------- Timeline ---------- */
+  .timeline { margin-top: 56px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px 26px; }
+  .timeline h3 { text-align: center; margin-bottom: 26px; font-size: 22px; }
+  .tl { display: grid; grid-template-columns: repeat(5, 1fr); position: relative; }
+  .tl::before { content: ""; position: absolute; left: 10%; right: 10%; top: 21px; height: 2px; background: var(--blush-2); }
+  .tl-item { text-align: center; position: relative; display: grid; gap: 8px; justify-items: center; padding: 0 6px; }
+  .tl-dot { width: 44px; height: 44px; border-radius: 50%; background: var(--white); border: 2px solid var(--rose); display: grid; place-items: center; font-weight: 700; font-size: 13px; color: var(--rose-ink); position: relative; }
+  .tl-item:last-child .tl-dot { background: var(--rose-ink); border-color: var(--rose-ink); color: #fff; }
+  .tl-item b { font-size: 15px; }
+  .tl-item span { font-size: 14px; color: var(--muted); line-height: 1.4; }
+
+  /* ---------- Guarantee ---------- */
+  .guarantee { background: var(--ink); color: #f6ebe9; border-radius: 28px; padding: 56px 48px; display: grid; grid-template-columns: auto 1fr; gap: 44px; align-items: center; position: relative; overflow: hidden; }
+  .guarantee::after { content: ""; position: absolute; width: 360px; height: 360px; right: -120px; bottom: -160px; border-radius: 50%; background: radial-gradient(circle, rgba(196, 139, 136, .35), transparent 70%); }
+  .big-seal { width: 172px; height: 172px; border-radius: 50%; border: 2px dashed rgba(246, 235, 233, .45); display: grid; place-items: center; text-align: center; position: relative; z-index: 1; }
+  .big-seal div { width: 144px; height: 144px; border-radius: 50%; background: var(--rose); color: #fff; display: grid; place-content: center; gap: 2px; font-family: "Fraunces", serif; }
+  .big-seal strong { font-size: 52px; line-height: .9; font-weight: 600; }
+  .big-seal small { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-family: "DM Sans", sans-serif; font-weight: 700; }
+  .guarantee .label { color: #e9bdb9; }
+  .guarantee .label::before { background: #e9bdb9; }
+  .guarantee h2 { color: #fff; margin: 12px 0 16px; }
+  .guarantee h2 em { color: #e9bdb9; }
+  .guarantee p { color: #d9c7c5; font-size: 18px; position: relative; z-index: 1; }
+  .guarantee .fine { font-size: 14px; color: #b8a3a1; margin-top: 14px; }
+  .guarantee > div:last-child { position: relative; z-index: 1; }
+
+  /* ---------- Fit ---------- */
+  .fit { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .fit-card { border-radius: var(--radius); padding: 32px 30px; display: grid; gap: 18px; align-content: start; }
+  .fit-yes { background: var(--white); border: 1.5px solid var(--rose); }
+  .fit-no { background: transparent; border: 1.5px dashed var(--blush-2); }
+  .fit-card ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .fit-card li { display: flex; gap: 12px; align-items: flex-start; }
+  .x { flex: 0 0 24px; height: 24px; border-radius: 50%; background: #efe4e2; color: var(--muted); display: grid; place-items: center; font-size: 13px; font-weight: 700; margin-top: 1px; }
+  .fit-no li { color: var(--ink-soft); }
+
+  /* ---------- Who does what ---------- */
+  .split { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
+  .split-card { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 30px; }
+  .split-card h3 { margin-bottom: 6px; }
+  .split-card .meta { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+  .split-card ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .split-card li { display: flex; gap: 12px; align-items: flex-start; }
+  .split-card.you { background: var(--white); }
+  .owner-note { margin-top: 20px; font-size: 15px; color: var(--ink-soft); background: var(--blush); border-radius: 12px; padding: 12px 14px; }
+
+  /* ---------- Included ---------- */
+  .included { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 900px; margin: 0 auto; }
+  .inc { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px; align-items: flex-start; }
+  .inc .tick { flex-basis: 28px; height: 28px; margin-top: 0; }
+  .inc b { display: block; margin-bottom: 2px; }
+  .inc span { color: var(--ink-soft); font-size: 15.5px; }
+  .price-box { max-width: 900px; margin: 22px auto 0; background: var(--ink); color: #f6ebe9; border-radius: 18px; padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  .price-box .p { font-family: "Fraunces", serif; font-size: 40px; color: #fff; line-height: 1; }
+  .price-box .p small { font-family: "DM Sans", sans-serif; font-size: 16px; color: #d9c7c5; }
+  .price-box .d { font-size: 15px; color: #d9c7c5; max-width: 470px; }
+
+  /* ---------- Proof ---------- */
+  .proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .proof-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: grid; }
+  .proof-img { aspect-ratio: 4 / 5; background: var(--blush); border-bottom: 1px solid var(--line); display: grid; place-items: center; text-align: center; color: var(--rose-deep); font-size: 14px; font-weight: 600; padding: 20px; }
+  .proof-img img { width: 100%; height: 100%; object-fit: cover; }
+  .proof-body { padding: 18px 20px 20px; display: grid; gap: 6px; }
+  .stars { color: #c99a5b; letter-spacing: 2px; font-size: 15px; }
+  .res-shot { background: #eef0f4; padding: 18px 18px 0; border-bottom: 1px solid var(--line); height: 300px; overflow: hidden; position: relative; }
+  .res-shot img { width: 100%; border-radius: 12px 12px 0 0; box-shadow: 0 6px 20px -8px rgba(40,40,60,.35); }
+  .res-shot::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 70px; background: linear-gradient(to bottom, rgba(238,240,244,0), #eef0f4); }
+  .res-top { background: linear-gradient(160deg, #fff 0%, var(--blush) 100%); border-bottom: 1px solid var(--line); padding: 30px 24px 26px; display: grid; gap: 2px; }
+  .res-num { font-family: "Fraunces", Georgia, serif; font-size: 76px; line-height: .95; font-weight: 600; color: var(--rose-ink); letter-spacing: -0.03em; }
+  .res-unit { font-weight: 700; font-size: 17px; color: var(--ink); }
+  .res-time { font-size: 15px; color: var(--rose-deep); font-weight: 600; }
+  .res-foot { max-width: 720px; margin: 22px auto 0; text-align: center; font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+  .proof-body b { font-size: 16px; }
+  .proof-body span { font-size: 14.5px; color: var(--muted); }
+
+  /* ---------- Call ---------- */
+  .call { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .call ol { list-style: none; counter-reset: c; padding: 0; margin: 0; display: grid; gap: 18px; }
+  .call li { counter-increment: c; display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+  .call li::before { content: counter(c); width: 44px; height: 44px; border-radius: 50%; background: var(--blush); color: var(--rose-ink); font-family: "Fraunces", serif; font-size: 20px; display: grid; place-items: center; }
+  .call li b { display: block; }
+  .call li span { color: var(--ink-soft); font-size: 16px; }
+  .call-copy { display: grid; gap: 18px; }
+  .call-copy p { color: var(--ink-soft); font-size: 18px; }
+  .pill-note { display: inline-flex; gap: 10px; align-items: center; background: var(--white); border: 1px solid var(--line); border-radius: 999px; padding: 10px 16px; font-size: 15px; font-weight: 500; width: fit-content; }
+
+  /* ---------- FAQ ---------- */
+  .faq { display: grid; gap: 12px; }
+  .faq-group { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rose-deep); margin: 22px 0 4px; }
+  .faq-group:first-child { margin-top: 0; }
+  details { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 0 22px; }
+  details[open] { border-color: var(--blush-2); }
+  summary { cursor: pointer; list-style: none; padding: 19px 30px 19px 0; font-weight: 600; font-size: 17px; position: relative; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 24px; font-weight: 400; color: var(--rose-deep); transition: transform .2s; }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  details p { padding: 0 0 20px; color: var(--ink-soft); font-size: 16px; }
+
+  /* ---------- Final CTA ---------- */
+  .final { text-align: center; display: grid; gap: 20px; justify-items: center; }
+  .final p { color: var(--ink-soft); font-size: 19px; max-width: 600px; }
+
+  footer { background: var(--ink); color: #b8a3a1; font-size: 13.5px; padding: 44px 0; }
+  footer .container { display: grid; gap: 14px; }
+  footer .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; color: #e6d6d4; }
+  footer a { color: #e6d6d4; text-decoration: none; margin-left: 18px; }
+  footer a:first-child { margin-left: 0; }
+
+  /* sticky mobile CTA */
+  .sticky { display: none; }
+
+  @media (max-width: 920px) {
+    .hero-grid, .call, .split { grid-template-columns: 1fr; gap: 36px; }
+    /* Form right under the headline on phones/tablets */
+    .hero-grid { gap: 16px; }
+    .hero-copy { grid-row: auto; }
+    .hero-grid { grid-template-rows: none; }
+    .form-card .secure { padding: 8px 14px 10px; font-size: 12.5px; }
+    .hero-copy { display: contents; }
+    .hero-copy .label { order: 1; }
+    .hero-copy h1 { order: 2; }
+    .form-card { order: 3; margin: 6px 0 0; }
+    .rating { order: 3; grid-column: auto; margin: 2px 0 14px; }
+    .hero-copy .sub { order: 4; }
+    .hero-points { order: 5; }
+    .guarantee-chip { order: 6; }
+    .phases { grid-template-columns: 1fr; }
+    .proof { grid-template-columns: 1fr 1fr; }
+    .guarantee { grid-template-columns: 1fr; text-align: center; padding: 44px 26px; justify-items: center; gap: 26px; }
+    .guarantee .label { justify-content: center; }
+  }
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .section { padding: 64px 0; }
+    .hero { padding: 4px 0 56px; }
+    h1 { font-size: 29px; }
+    .topbar { font-size: 12.5px; padding: 7px 12px; }
+    .topbar .tb-extra { display: none; }
+    .nav { padding: 12px 0; }
+    .form-card .intro { margin-bottom: 12px; }
+    .fit, .included, .proof { grid-template-columns: 1fr; }
+    .tl { grid-template-columns: 1fr; gap: 18px; justify-items: start; }
+    .tl::before { left: 21px; right: auto; top: 10px; bottom: 10px; width: 2px; height: auto; }
+    .tl-item { grid-template-columns: 44px 1fr; text-align: left; justify-items: start; gap: 2px 14px; padding: 0; }
+    .tl-item .tl-dot { grid-row: span 2; }
+    .two { grid-template-columns: 1fr; gap: 0; }
+    .form-card { border-radius: 20px; }
+    .nav a.small { display: none; }
+    .sticky { display: block; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; transform: translateY(140%); transition: transform .25s; }
+    .sticky.show { transform: none; }
+    .sticky .btn { width: 100%; }
+    footer { padding-bottom: 96px; }
+    footer a { margin-left: 0; margin-right: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><span class="tb-extra">Para artistas de micropigmentación en EE.UU. · </span><strong>Garantía de 30 días: si no te gusta, te devolvemos el 100%</strong></div>
+
+<nav class="nav">
+  <div class="container">
+    <a class="brand" href="#">PMU <span>Academia</span></a>
+    <a class="small" href="#aplicar">¿Calificas? →</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="label">Para artistas de micropigmentación</span>
+      <h1>Te llenamos la agenda con clientas nuevas desde Facebook e Instagram <em>o te devolvemos tu dinero.</em></h1>
+      <p class="sub">Anuncios, página, app de citas y seguimiento automático, todo hecho por nosotros. Tú solo atiendes a las clientas que llegan listas para reservar.</p>
+      <ul class="hero-points">
+        <li><span class="tick">✓</span>Nosotros creamos y manejamos tus anuncios en español</li>
+        <li><span class="tick">✓</span>Una asistente con IA contesta y da seguimiento a cada interesada</li>
+        <li><span class="tick">✓</span>Tu propia app con tu nombre y tu número de negocio</li>
+      </ul>
+      <div class="guarantee-chip">
+        <div class="seal">30<br>días</div>
+        <div><b>Garantía de 30 días, por cualquier razón</b><span>Si no estás contenta, te regresamos el 100%.</span></div>
+      </div>
+    </div>
+
+    <!-- ===== FORMULARIO: Zuops Smart Form "Agenda Llena – Página de Garantía" ===== -->
+    <div class="form-card" id="aplicar">
+      <!-- Usezu Smart Form -->
+      <div id="zform" data-usezu-form="https://crm.adrianolocal.com/f/agenda-llena-pagina-de-garantia-3l6g" data-header="0" data-bg="transparent" data-min-height="480"></div>
+      <div class="secure">🔒 Tus datos están seguros y privados.</div>
+    </div>
+    <div class="rating" aria-label="Calificación de 5 estrellas">
+      <span class="rating-stars" aria-hidden="true">★★★★★</span>
+      <span class="rating-text"><b>5.0</b> · Calificación de nuestras artistas</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= TRUST STRIP ================= -->
+<!-- Confirma que tus clientas están de acuerdo con aparecer aquí, o borra esta sección -->
+<section class="strip">
+  <div class="container">
+    <small>Artistas que ya usan el sistema</small>
+    <span class="name">Yoly Brow Studio</span>
+    <span class="name">Beauty Spot by Jami</span>
+    <span class="name">Genluxe Beauty Studio</span>
+    <span class="name">Cocora Aesthetics</span>
+    <span class="name">Natisoft Brows</span>
+  </div>
+</section>
+
+<!-- ================= PROCESO ================= -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">Cómo funciona</span>
+      <h2>Las 3 fases detrás de <em>tu agenda llena</em></h2>
+      <p>Tú no tienes que aprender de anuncios, páginas ni tecnología. Nosotros lo armamos y lo manejamos contigo.</p>
+    </div>
+    <div class="phases">
+      <div class="phase">
+        <div class="num">01</div>
+        <div class="when">Diseño · Semana 1</div>
+        <h3>Armamos tu sistema</h3>
+        <p>Escoges tu paleta de colores y creamos tu página, tu app con tu nombre y número, y tu oferta para atraer clientas nuevas.</p>
+      </div>
+      <div class="phase">
+        <div class="num">02</div>
+        <div class="when">Lanzamiento</div>
+        <h3>Prendemos tus anuncios</h3>
+        <p>Escribimos y diseñamos tus anuncios en español con tus fotos de antes y después, y los lanzamos en Facebook e Instagram en tu zona.</p>
+      </div>
+      <div class="phase">
+        <div class="num">03</div>
+        <div class="when">Cada semana</div>
+        <h3>Seguimiento y optimización</h3>
+        <p>Tu asistente con IA contesta a cada interesada, manda recordatorios y empuja a reservar. Nosotros revisamos los números y mejoramos los anuncios.</p>
+      </div>
+    </div>
+
+    <!-- Ajusta los días a tu proceso real -->
+    <div class="timeline">
+      <h3>De la llamada a tus primeras clientas</h3>
+      <div class="tl">
+        <div class="tl-item"><div class="tl-dot">D1</div><b>Llamada</b><span>Conocemos tu negocio y tu oferta</span></div>
+        <div class="tl-item"><div class="tl-dot">D2</div><b>Tu marca</b><span>Escoges colores y nos mandas fotos</span></div>
+        <div class="tl-item"><div class="tl-dot">D4</div><b>Tu página y app</b><span>Listas con tu nombre y número</span></div>
+        <div class="tl-item"><div class="tl-dot">D6</div><b>Tus anuncios</b><span>Los revisas y apruebas</span></div>
+        <div class="tl-item"><div class="tl-dot">D7</div><b>¡En vivo!</b><span>Empiezan a llegar interesadas</span></div>
+      </div>
+    </div>
+
+    <div class="cta-row"><a class="btn" href="#aplicar">Ver si califico <span class="arr">→</span></a><span class="cta-note">Toma menos de 1 minuto</span></div>
+  </div>
+</section>
+
+<!-- ================= GARANTÍA ================= -->
+<section class="section">
+  <div class="container">
+    <div class="guarantee">
+      <div class="big-seal"><div><strong>30</strong><small>días</small></div></div>
+      <div>
+        <span class="label">Nuestra garantía</span>
+        <h2>Si en 30 días no estás contenta, <em>te devolvemos todo.</em></h2>
+        <p>Sin preguntas incómodas y sin letra chiquita. Si en tus primeros 30 días sientes que el sistema no es para ti, por la razón que sea, te regresamos el 100% de lo que nos pagaste.</p>
+        <p class="fine">El dinero que inviertes en anuncios lo pagas directo a Meta, así que ese no lo controlamos ni lo cobramos nosotros.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA QUIÉN ES ================= -->
+<section class="section tint">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">¿Es para ti?</span>
+      <h2>Trabajamos con pocas artistas <em>a la vez</em></h2>
+      <p>Para que el sistema funcione, necesitamos que estés lista para recibir clientas nuevas.</p>
+    </div>
+    <div class="fit">
+      <div class="fit-card fit-yes">
+        <h3>Es para ti si…</h3>
+        <ul>
+          <li><span class="tick">✓</span>Ya haces micropigmentación y tienes clientas que te pagan</li>
+          <li><span class="tick">✓</span>Tienes fotos de antes y después de tu trabajo</li>
+          <li><span class="tick">✓</span>Puedes invertir $15 al día en anuncios más $297 al mes</li>
+          <li><span class="tick">✓</span>Puedes contestar llamadas y mensajes de tus nuevas clientas</li>
+          <li><span class="tick">✓</span>Quieres dejar de depender de recomendaciones y de publicar sin resultados</li>
+        </ul>
+      </div>
+      <div class="fit-card fit-no">
+        <h3>No es para ti si…</h3>
+        <ul>
+          <li><span class="x">✕</span>Todavía estás aprendiendo y no tienes trabajos propios que mostrar</li>
+          <li><span class="x">✕</span>Buscas resultados sin invertir en anuncios</li>
+          <li><span class="x">✕</span>No tienes tiempo para atender a las clientas que te lleguen</li>
+          <li><span class="x">✕</span>Quieres que tus clientas lleguen solas sin dar seguimiento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIÉN HACE QUÉ ================= -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">Hecho para ti</span>
+      <h2>Nosotros hacemos lo difícil. <em>Tú haces lo que amas.</em></h2>
+    </div>
+    <div class="split">
+      <div class="split-card">
+        <h3>Lo que hacemos nosotros</h3>
+        <p class="meta">Todo el marketing, de principio a fin</p>
+        <ul>
+          <li><span class="tick">✓</span>Escribimos, diseñamos y lanzamos tus anuncios en español</li>
+          <li><span class="tick">✓</span>Creamos tu página web con tus colores y tus resultados</li>
+          <li><span class="tick">✓</span>Configuramos tu app con tu nombre y tu número de negocio</li>
+          <li><span class="tick">✓</span>Tu asistente con IA contesta, da seguimiento y agenda</li>
+          <li><span class="tick">✓</span>Optimizamos tu perfil de Google para que te encuentren</li>
+          <li><span class="tick">✓</span>Te ayudamos a conseguir reseñas en Google y Facebook</li>
+          <li><span class="tick">✓</span>Revisamos los números y mejoramos tus anuncios</li>
+        </ul>
+      </div>
+      <div class="split-card you">
+        <h3>Lo que haces tú</h3>
+        <p class="meta">Unos minutos al día</p>
+        <ul>
+          <li><span class="tick">✓</span>Nos mandas tus fotos de antes y después</li>
+          <li><span class="tick">✓</span>Apruebas tus anuncios antes de lanzarlos</li>
+          <li><span class="tick">✓</span>Pagas tus anuncios directo a Meta ($15 al día)</li>
+          <li><span class="tick">✓</span>Llamas a tus nuevas clientas para su consulta</li>
+          <li><span class="tick">✓</span>Atiendes a tus clientas como siempre</li>
+        </ul>
+        <div class="owner-note">Tú eres dueña de tu página de Facebook, tus anuncios y tus contactos.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUÉ INCLUYE ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">Todo incluido</span>
+      <h2>Lo que recibes con el <em>Sistema Agenda Llena</em></h2>
+    </div>
+    <div class="included">
+      <div class="inc"><span class="tick">✓</span><div><b>Anuncios hechos por nosotros</b><span>Texto, diseño y manejo en Facebook e Instagram</span></div></div>
+      <div class="inc"><span class="tick">✓</span><div><b>Tu página web</b><span>Con tu marca, tus fotos y tu oferta</span></div></div>
+      <div class="inc"><span class="tick">✓</span><div><b>Tu app con tu nombre</b><span>Ves todas tus interesadas y conversaciones en un solo lugar</span></div></div>
+      <div class="inc"><span class="tick">✓</span><div><b>Asistente de citas con IA</b><span>Contesta, da seguimiento y manda recordatorios por ti</span></div></div>
+      <div class="inc"><span class="tick">✓</span><div><b>Perfil de Google optimizado</b><span>Para que te encuentren cuando buscan en tu zona</span></div></div>
+      <div class="inc"><span class="tick">✓</span><div><b>Guía de Ventas y Reservas</b><span>Qué decir en la llamada para que la clienta reserve</span></div></div>
+    </div>
+    <div class="price-box">
+      <div class="p">$297 <small>/ mes</small></div>
+      <div class="d">Más $15 al día de anuncios que pagas directo a Meta. Sin contratos largos y con garantía de 30 días.</div>
+      <a class="btn" href="#aplicar" style="background:var(--rose);">Aplicar ahora <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTADOS (mismos datos que el VSL) ================= -->
+<section class="section tint">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">Resultados reales</span>
+      <h2><em>57 clientas interesadas</em> para 3 artistas este mes</h2>
+      <p>Mismo sistema, misma oferta: cejas Ombré Powder de $397. Esto fue lo que pasó cuando prendimos sus anuncios.</p>
+    </div>
+    <div class="proof">
+      <div class="proof-card">
+        <div class="res-shot"><img src="resultado-jami.jpg" alt="Lista de clientas interesadas de Beauty Spot by Jami en Zuops (datos difuminados)" loading="lazy" width="600"></div>
+        <div class="res-top"><span class="res-num">31</span><span class="res-unit">clientas interesadas</span><span class="res-time">en 9 días</span></div>
+        <div class="proof-body"><b>Beauty Spot by Jami</b><span>New Jersey · Ombré Powder Brows</span></div>
+      </div>
+      <div class="proof-card">
+        <div class="res-shot"><img src="resultado-yoly.jpg" alt="Lista de clientas interesadas de Yoly Brow Studio en Zuops (datos difuminados)" loading="lazy" width="600"></div>
+        <div class="res-top"><span class="res-num">15</span><span class="res-unit">clientas interesadas</span><span class="res-time">en 10 días</span></div>
+        <div class="proof-body"><b>Yoly Brow Studio</b><span>Ombré Powder Brows</span></div>
+      </div>
+      <div class="proof-card">
+        <div class="res-shot"><img src="resultado-genluxe.jpg" alt="Lista de clientas interesadas de Genluxe Beauty Studio en Zuops (datos difuminados)" loading="lazy" width="600"></div>
+        <div class="res-top"><span class="res-num">11</span><span class="res-unit">clientas interesadas</span><span class="res-time">en su primera semana</span></div>
+        <div class="proof-body"><b>Genluxe Beauty Studio</b><span>Tampa, FL · Ombré Powder Brows</span></div>
+      </div>
+    </div>
+    <p class="res-foot">Clientas interesadas = personas que enviaron el formulario del anuncio con su nombre y teléfono. Resultados reales de clientas de PMU Academia. No incluye citas ni ventas. Los resultados varían.</p>
+    <div class="cta-row"><a class="btn" href="#aplicar">Quiero resultados así <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<!-- ================= LA LLAMADA ================= -->
+<section class="section alt">
+  <div class="container call">
+    <div class="call-copy">
+      <span class="label">La llamada</span>
+      <h2>20 minutos para ver si <em>hacemos match</em></h2>
+      <p>No es una llamada de presión. Si no somos la mejor opción para ti, te lo decimos y te recomendamos qué hacer.</p>
+      <span class="pill-note">📞 Por Google Meet · en español</span>
+    </div>
+    <ol>
+      <li><div><b>Revisamos tu negocio</b><span>Tus servicios, precios y cómo te llegan las clientas hoy.</span></div></li>
+      <li><div><b>Te mostramos tu plan</b><span>Qué oferta usaríamos y cómo se verían tus anuncios.</span></div></li>
+      <li><div><b>Resolvemos tus dudas</b><span>Cómo funciona la app, la asistente y la garantía.</span></div></li>
+      <li><div><b>Decidimos juntas</b><span>Si tiene sentido, empezamos esa misma semana.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section">
+  <div class="container narrow">
+    <div class="section-head">
+      <span class="label">Preguntas frecuentes</span>
+      <h2>Lo que más <em>nos preguntan</em></h2>
+    </div>
+    <div class="faq">
+      <div class="faq-group">Anuncios</div>
+      <details><summary>¿Cuánto tengo que invertir en anuncios?</summary><p>Recomendamos empezar con $15 al día ($450 al mes aproximadamente). Ese dinero lo pagas directo a Meta con tu tarjeta. Nosotros no lo tocamos.</p></details>
+      <details><summary>¿Cuándo empiezan a llegar clientas?</summary><p>Los anuncios normalmente empiezan a traer interesadas en los primeros días de estar en vivo. Las primeras semanas Meta está aprendiendo, y vamos mejorando los anuncios con los resultados.</p></details>
+      <details><summary>¿Necesito saber de redes sociales o tecnología?</summary><p>No. Nosotros hacemos los anuncios, la página y la app. Tú solo nos mandas tus fotos, apruebas los anuncios y atiendes a tus clientas.</p></details>
+
+      <div class="faq-group">Garantía</div>
+      <details><summary>¿Cómo funciona la garantía?</summary><p>Si en tus primeros 30 días no estás contenta con el sistema, por cualquier razón, nos avisas y te devolvemos el 100% de lo que nos pagaste.</p></details>
+      <details><summary>¿La garantía incluye lo que gasté en anuncios?</summary><p>No. Lo que inviertes en anuncios lo pagas directo a Meta, no a nosotros. La garantía cubre todo lo que nos pagaste a nosotros.</p></details>
+
+      <div class="faq-group">El sistema</div>
+      <details><summary>¿Cuánto cuesta?</summary><p>$297 al mes, más tu inversión en anuncios. No hay contratos largos.</p></details>
+      <details><summary>¿Puedo probarlo antes?</summary><p>Pregúntanos en la llamada por la semana de prueba.</p></details>
+      <details><summary>¿Qué es la app con mi nombre?</summary><p>Es tu propia app con el nombre de tu negocio y tu número. Ahí ves a todas tus interesadas, tus conversaciones y tus citas en un solo lugar.</p></details>
+      <details><summary>¿Qué pasa después de llenar el formulario?</summary><p>Si calificas, escoges un horario para una llamada de 20 minutos por Google Meet. Ahí vemos tu negocio y te explicamos el plan.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="section tint">
+  <div class="container final">
+    <span class="label">Tu siguiente paso</span>
+    <h2>¿Lista para <em>llenar tu agenda?</em></h2>
+    <p>Contesta 5 preguntas, agenda tu llamada y en una semana tus anuncios pueden estar en vivo. Con garantía de 30 días.</p>
+    <a class="btn" href="#aplicar">Ver si califico <span class="arr">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <span>© <span id="yr"></span> PMU Academia. Todos los derechos reservados.</span>
+      <span><a href="/privacidad">Privacidad</a><a href="/terminos">Términos</a></span>
+    </div>
+    <p>Los resultados varían según cada negocio, su ubicación, sus precios, sus fotos y su seguimiento. No garantizamos un número específico de clientas o ingresos.</p>
+    <p>Este sitio no es parte de Facebook ni de Meta Platforms, Inc., y no está respaldado por Facebook de ninguna manera. Facebook e Instagram son marcas registradas de Meta Platforms, Inc.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn" href="#aplicar">Ver si califico <span class="arr">→</span></a></div>
+
+<script>
+(function () {
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  // Pass UTMs / fbclid through to the Smart Form, then load the Usezu embed script
+  var zf = document.getElementById("zform");
+  zf.setAttribute("data-usezu-form", CONFIG.FORM_URL + (location.search || ""));
+  var s = document.createElement("script");
+  s.async = true; s.src = "https://crm.adrianolocal.com/embed/smart-form.js?v=2";
+  document.body.appendChild(s);
+
+  var sticky = document.getElementById("sticky");
+  var card = document.getElementById("aplicar");
+  window.addEventListener("scroll", function () {
+    var r = card.getBoundingClientRect();
+    var visible = r.top < window.innerHeight && r.bottom > 0;
+    sticky.classList.toggle("show", !visible && window.scrollY > 300);
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
