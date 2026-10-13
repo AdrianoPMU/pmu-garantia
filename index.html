@@ -167,10 +167,13 @@
   .phase h3 { font-size: 22px; }
   .phase p { color: var(--ink-soft); font-size: 16px; }
   .phase p b, .section-head p b, .g-callout b { color: var(--ink); }
-  .g-callout { margin-top: 28px; display: flex; gap: 16px; align-items: flex-start; background: linear-gradient(160deg, #fffaf0, #fbf1dc); border: 1px solid #ecd9ae; border-radius: var(--radius); padding: 24px 26px; }
-  .g-check { flex: 0 0 44px; height: 44px; border-radius: 50%; background: #efcf86; color: var(--ink); display: grid; place-items: center; font-size: 20px; font-weight: 700; }
-  .g-callout h3 { font-family: "DM Sans", sans-serif; font-weight: 800; font-size: 17px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 6px; }
-  .g-callout p { color: var(--ink-soft); font-size: 16px; }
+  .g-callout { position: relative; margin: 44px auto 0; max-width: 900px; display: flex; gap: 22px; align-items: center; background: linear-gradient(150deg, #fffaf0 0%, #fbedcf 100%); border: 2px solid #e2c27a; border-radius: 22px; padding: 34px 34px 30px; box-shadow: 0 2px 0 #f3e2b8, 0 22px 50px -18px rgba(156, 112, 30, .45); }
+  .g-callout::before { content: "Sin riesgo"; position: absolute; top: -14px; left: 34px; background: var(--rose-ink); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; box-shadow: 0 6px 14px -6px rgba(122,69,71,.6); }
+  .g-check { flex: 0 0 auto; width: 72px; height: 72px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #f8dc93, #e3b553); color: var(--ink); display: grid; place-items: center; font-size: 34px; font-weight: 800; box-shadow: 0 0 0 6px rgba(239, 207, 134, .35), 0 10px 20px -8px rgba(156, 112, 30, .6); }
+  .g-callout h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 28px; letter-spacing: -0.01em; text-transform: none; margin-bottom: 8px; color: var(--ink); }
+  .g-callout h3 em { color: var(--rose-deep); }
+  .g-callout p { color: var(--ink-soft); font-size: 17px; line-height: 1.6; }
+  @media (max-width: 680px) { .g-callout { flex-direction: column; text-align: center; padding: 34px 22px 26px; gap: 14px; } .g-callout::before { left: 50%; transform: translateX(-50%); } .g-callout h3 { font-size: 25px; } }
 
   /* ---------- Timeline ---------- */
   .timeline { margin-top: 28px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px 26px; }
@@ -414,7 +417,7 @@
     <div class="g-callout">
       <span class="g-check" aria-hidden="true">✓</span>
       <div>
-        <h3>Garantía de 30 días</h3>
+        <h3>Garantía de <em>30 días</em>: si no te gusta, te devolvemos tu dinero</h3>
         <p>Si en tus <b>primeros 30 días</b> no estás contenta con el sistema, <b>por la razón que sea</b>, te devolvemos el 100% de lo que nos pagaste. Sin preguntas incómodas. Tú haces tu parte y <b>el riesgo es nuestro</b>. Lo mismo que lees aquí te lo decimos en la llamada.</p>
       </div>
     </div>
